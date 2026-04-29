@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A premium mobile web user journey map for a restaurant reservation experience."
+    />
+    <title>Aurora Table Reservation Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__content">
+          <p class="eyebrow">Mobile journey map</p>
+          <h1 id="page-title">Aurora Table reservation experience</h1>
+          <p class="hero__intro">
+            A calm, premium booking flow for a fictional restaurant where every
+            happy path and recovery moment feels deliberate, clear, and human.
+          </p>
+        </div>
+        <div class="hero__metrics" aria-label="Journey design principles">
+          <div>
+            <span>6</span>
+            <p>Recovery paths</p>
+          </div>
+          <div>
+            <span>5</span>
+            <p>Core moments</p>
+          </div>
+          <div>
+            <span>1</span>
+            <p>Cohesive system</p>
+          </div>
+          <div>
+            <span>12</span>
+            <p>UX checkpoints</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey-wrap" aria-label="Horizontal reservation journey map">
+        <div class="journey-track">
+          <article class="journey-card happy-card" data-step="01">
+            <div class="phone" aria-label="Landing page mobile screen">
+              <div class="phone__status">
+                <span>9:41</span>
+                <span>5G 100%</span>
+              </div>
+              <div class="screen restaurant-screen">
+                <div class="nav-row">
+                  <button aria-label="Back">&lt;</button>
+                  <span>Aurora Table</span>
+                  <button aria-label="Save">Save</button>
+                </div>
+                <div class="hero-image">
+                  <span class="badge">Open tonight</span>
+                </div>
+                <div class="screen-copy">
+                  <p class="screen-kicker">Modern coastal dining</p>
+                  <h2>Aurora Table</h2>
+                  <p>Seasonal tasting menus beside the waterfront.</p>
+                </div>
+                <div class="info-row">
+                  <span>4.9</span>
+                  <span>$95 pp</span>
+                  <span>SoMa</span>
+                </div>
+                <div class="signal-row">
+                  <span>Tonight: 6 tables</span>
+                  <span>Dress code: relaxed</span>
+                </div>
+                <button class="primary-button">Reserve a table</button>
+              </div>
+            </div>
+            <div class="step-content">
+              <h2>Landing on restaurant page</h2>
+              <div class="detail-strip">
+                <span>Emotion: curious</span>
+                <span>Risk: low trust</span>
+                <span>Decision: start booking</span>
+              </div>
+              <dl>
+                <div>
+                  <dt>User intent</dt>
+                  <dd>Validate taste, availability, and confidence before starting.</dd>
+                </div>
+                <div>
+                  <dt>System response</dt>
+                  <dd>Surfaces venue story, social proof, price context, and a single booking action.</dd>
+                </div>
+                <div>
+                  <dt>Edge cases</dt>
+                  <dd>Slow content loads, closed dates, incomplete venue details.</dd>
+                </div>
+                <div>
+                  <dt>Design detail</dt>
+                  <dd>Hero imagery, rating, price, neighborhood, and availability are grouped above the action so the guest never hunts for confidence cues.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="journey-card happy-card" data-step="02">
+            <div class="phone" aria-label="Time selection mobile screen">
+              <div class="phone__status">
+                <span>9:42</span>
+                <span>5G 100%</span>
+              </div>
+              <div class="screen">
+                <div class="nav-row">
+                  <button aria-label="Back">&lt;</button>
+                  <span>Select a time</span>
+                  <button aria-label="Help">?</button>
+                </div>
+                <div class="date-strip">
+                  <span>Thu<br />28</span>
+                  <span class="active">Fri<br />29</span>
+                  <span>Sat<br />30</span>
+                  <span>Sun<br />31</span>
+                </div>
+                <div class="time-grid">
+                  <button>5:30</button>
+                  <button>6:00</button>
+                  <button class="selected">6:45</button>
+                  <button>7:15</button>
+                  <button>8:00</button>
+                  <button>8:45</button>
+                </div>
+                <div class="availability-row">
+                  <span class="hot">High demand</span>
+                  <span>Held after next step</span>
+                </div>
+                <div class="soft-note">
+                  <strong>Best match</strong>
+                  <span>6:45 PM keeps the terrace available.</span>
+                </div>
+                <button class="primary-button">Continue</button>
+              </div>
+            </div>
+            <div class="step-content">
+              <h2>Selecting a reservation time</h2>
+              <div class="detail-strip">
+                <span>Emotion: comparing</span>
+                <span>Risk: slot contention</span>
+                <span>Decision: choose time</span>
+              </div>
+              <dl>
+                <div>
+                  <dt>User intent</dt>
+                  <dd>Find a desirable slot without comparing too many options.</dd>
+                </div>
+                <div>
+                  <dt>System response</dt>
+                  <dd>Ranks open times, highlights a recommended slot, and keeps date navigation tactile.</dd>
+                </div>
+                <div>
+                  <dt>Edge cases</dt>
+                  <dd>Slot contention, fully booked nights, late inventory refresh.</dd>
+                </div>
+                <div>
+                  <dt>Design detail</dt>
+                  <dd>Recommended inventory is visually elevated, while demand context explains urgency without sounding pushy.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="journey-card happy-card" data-step="03">
+            <div class="phone" aria-label="Party size mobile screen">
+              <div class="phone__status">
+                <span>9:43</span>
+                <span>5G 100%</span>
+              </div>
+              <div class="screen">
+                <div class="nav-row">
+                  <button aria-label="Back">&lt;</button>
+                  <span>Guests</span>
+                  <button aria-label="Help">?</button>
+                </div>
+                <div class="selection-panel">
+                  <span class="screen-kicker">Party size</span>
+                  <div class="counter">
+                    <button aria-label="Remove guest">-</button>
+                    <strong>4</strong>
+                    <button aria-label="Add guest">+</button>
+                  </div>
+                  <p>Table for four at 6:45 PM.</p>
+                </div>
+                <div class="preference-list">
+                  <label><input type="checkbox" checked /> Terrace preferred</label>
+                  <label><input type="checkbox" /> Anniversary note</label>
+                  <label><input type="checkbox" /> Vegetarian menu</label>
+                </div>
+                <div class="capacity-note">
+                  Standard tables support 2-8 guests. Larger parties convert to host request.
+                </div>
+                <button class="primary-button">Review reservation</button>
+              </div>
+            </div>
+            <div class="step-content">
+              <h2>Choosing party size</h2>
+              <div class="detail-strip">
+                <span>Emotion: committing</span>
+                <span>Risk: table rules</span>
+                <span>Decision: group fit</span>
+              </div>
+              <dl>
+                <div>
+                  <dt>User intent</dt>
+                  <dd>Confirm the group and add lightweight context without friction.</dd>
+                </div>
+                <div>
+                  <dt>System response</dt>
+                  <dd>Checks table rules, preserves the chosen time, and offers optional preferences.</dd>
+                </div>
+                <div>
+                  <dt>Edge cases</dt>
+                  <dd>Unsupported group size, high-chair notes, private dining threshold.</dd>
+                </div>
+                <div>
+                  <dt>Design detail</dt>
+                  <dd>Optional preferences are presented as low-pressure toggles so special context can be captured without slowing the core flow.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="journey-card happy-card" data-step="04">
+            <div class="phone" aria-label="Confirmation mobile screen">
+              <div class="phone__status">
+                <span>9:44</span>
+                <span>5G 100%</span>
+              </div>
+              <div class="screen">
+                <div class="nav-row">
+                  <button aria-label="Back">&lt;</button>
+                  <span>Confirm</span>
+                  <button aria-label="Secure">Lock</button>
+                </div>
+                <div class="review-card">
+                  <p class="screen-kicker">Aurora Table</p>
+                  <h2>Fri, Apr 29 &middot; 6:45 PM</h2>
+                  <p>4 guests &middot; Terrace preferred</p>
+                </div>
+                <div class="form-stack">
+                  <label>Mobile number <span>+1 415 000 1848</span></label>
+                  <label>Card hold <span>&bull;&bull;&bull;&bull; 4821</span></label>
+                </div>
+                <div class="hold-note">
+                  No charge today. A $25 hold protects the table.
+                </div>
+                <div class="assurance-list">
+                  <span>Encrypted checkout</span>
+                  <span>5 min table hold</span>
+                </div>
+                <button class="primary-button">Confirm reservation</button>
+              </div>
+            </div>
+            <div class="step-content">
+              <h2>Confirming reservation</h2>
+              <div class="detail-strip">
+                <span>Emotion: cautious</span>
+                <span>Risk: policy clarity</span>
+                <span>Decision: finalize</span>
+              </div>
+              <dl>
+                <div>
+                  <dt>User intent</dt>
+                  <dd>Review the commitment, understand the hold, and finish securely.</dd>
+                </div>
+                <div>
+                  <dt>System response</dt>
+                  <dd>Summarizes the booking, explains policy in plain language, and validates contact details.</dd>
+                </div>
+                <div>
+                  <dt>Edge cases</dt>
+                  <dd>SMS verification, payment hold decline, stale availability, network timeout.</dd>
+                </div>
+                <div>
+                  <dt>Design detail</dt>
+                  <dd>Policy, contact, and payment details are visible in one compact review state to reduce last-step anxiety.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="journey-card happy-card" data-step="05">
+            <div class="phone" aria-label="Success state mobile screen">
+              <div class="phone__status">
+                <span>9:45</span>
+                <span>5G 100%</span>
+              </div>
+              <div class="screen success-screen">
+                <div class="success-orb">OK</div>
+                <p class="screen-kicker">Reservation confirmed</p>
+                <h2>We'll see you Friday.</h2>
+                <p>Aurora Table &middot; 6:45 PM &middot; 4 guests</p>
+                <div class="ticket">
+                  <span>Confirmation</span>
+                  <strong>AT-2948</strong>
+                </div>
+                <div class="next-steps">
+                  <span>Reminder text: 24h before</span>
+                  <span>Modify until 3:00 PM</span>
+                </div>
+                <button class="primary-button">Add to calendar</button>
+                <button class="secondary-button">Share details</button>
+              </div>
+            </div>
+            <div class="step-content">
+              <h2>Success state</h2>
+              <div class="detail-strip">
+                <span>Emotion: relieved</span>
+                <span>Risk: forgotten details</span>
+                <span>Decision: save/share</span>
+              </div>
+              <dl>
+                <div>
+                  <dt>User intent</dt>
+                  <dd>Feel reassured and keep the reservation accessible.</dd>
+                </div>
+                <div>
+                  <dt>System response</dt>
+                  <dd>Confirms the outcome, gives a reference code, and offers calendar or sharing actions.</dd>
+                </div>
+                <div>
+                  <dt>Edge cases</dt>
+                  <dd>Calendar permission denied, share sheet unavailable, confirmation email delayed.</dd>
+                </div>
+                <div>
+                  <dt>Design detail</dt>
+                  <dd>The success state shifts from transaction to reassurance, with reference code, calendar action, and modification window clearly visible.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="non-happy" aria-labelledby="recovery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Parallel non-happy paths</p>
+          <h2 id="recovery-title">Recovery states designed with calm precision</h2>
+        </div>
+        <div class="recovery-grid">
+          <article class="recovery-card">
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="skeleton wide"></div>
+                <div class="time-pill disabled">6:45 PM</div>
+                <div class="message warning">
+                  <strong>That table just booked.</strong>
+                  <span>Choose a nearby time and we'll hold it for 5 minutes.</span>
+                </div>
+                <button>View 7:15 PM</button>
+              </div>
+            </div>
+            <h3>Time slot becomes unavailable</h3>
+            <div class="recovery-meta">
+              <span>Trigger: inventory race</span>
+              <span>Preserve: date, party, prefs</span>
+            </div>
+            <p><strong>Feedback:</strong> "That table just booked."</p>
+            <p><strong>Recovery:</strong> Preserve date and party size, then recommend nearest comparable slots.</p>
+            <p><strong>System detail:</strong> Release stale hold, refresh live inventory, and preselect the closest time by dining quality.</p>
+          </article>
+
+          <article class="recovery-card">
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="counter compact">
+                  <button>-</button>
+                  <strong>9</strong>
+                  <button>+</button>
+                </div>
+                <div class="message warning">
+                  <strong>Parties over 8 need a host.</strong>
+                  <span>We can request a larger table for you.</span>
+                </div>
+                <button>Contact host</button>
+              </div>
+            </div>
+            <h3>Party size not supported</h3>
+            <div class="recovery-meta">
+              <span>Trigger: capacity rule</span>
+              <span>Preserve: notes</span>
+            </div>
+            <p><strong>Feedback:</strong> "Parties over 8 need a host."</p>
+            <p><strong>Recovery:</strong> Route to host request with selected time and notes attached.</p>
+            <p><strong>System detail:</strong> Convert the reservation object into a lead for concierge review with the guest's preferred time intact.</p>
+          </article>
+
+          <article class="recovery-card">
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <label class="code-label">Enter SMS code</label>
+                <div class="code-row">
+                  <span>4</span><span>1</span><span class="error">8</span><span></span>
+                </div>
+                <div class="message danger">
+                  <strong>That code didn't match.</strong>
+                  <span>Try again or send a fresh code.</span>
+                </div>
+                <button>Resend code</button>
+              </div>
+            </div>
+            <h3>Authentication required</h3>
+            <div class="recovery-meta">
+              <span>Trigger: new device</span>
+              <span>Preserve: table hold</span>
+            </div>
+            <p><strong>Feedback:</strong> "That code didn't match."</p>
+            <p><strong>Recovery:</strong> Keep booking details locked while the guest retries or requests a new code.</p>
+            <p><strong>System detail:</strong> Rate-limit code attempts, show remaining hold time, and avoid clearing verified contact data.</p>
+          </article>
+
+          <article class="recovery-card">
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="payment-card">&bull;&bull;&bull;&bull; 4821</div>
+                <div class="message danger">
+                  <strong>Card hold didn't go through.</strong>
+                  <span>No charge was made. Add another card to continue.</span>
+                </div>
+                <button>Use another card</button>
+              </div>
+            </div>
+            <h3>Payment hold failure</h3>
+            <div class="recovery-meta">
+              <span>Trigger: hold declined</span>
+              <span>Preserve: slot for 2 min</span>
+            </div>
+            <p><strong>Feedback:</strong> "No charge was made."</p>
+            <p><strong>Recovery:</strong> Explain the failed hold, allow card replacement, and retain the table briefly.</p>
+            <p><strong>System detail:</strong> Confirm no capture occurred, tokenize the replacement method, then retry the hold once.</p>
+          </article>
+
+          <article class="recovery-card">
+            <div class="mini-phone">
+              <div class="mini-screen center-state">
+                <div class="spinner"></div>
+                <div class="message warning">
+                  <strong>Still trying to confirm.</strong>
+                  <span>Your details are saved on this screen.</span>
+                </div>
+                <button>Retry securely</button>
+              </div>
+            </div>
+            <h3>Network timeout</h3>
+            <div class="recovery-meta">
+              <span>Trigger: confirm latency</span>
+              <span>Preserve: idempotency key</span>
+            </div>
+            <p><strong>Feedback:</strong> "Still trying to confirm."</p>
+            <p><strong>Recovery:</strong> Retry idempotently, prevent duplicate holds, and preserve form state.</p>
+            <p><strong>System detail:</strong> Poll confirmation status before retrying payment or inventory writes.</p>
+          </article>
+
+          <article class="recovery-card">
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="fully-booked">Fully booked</div>
+                <div class="message neutral">
+                  <strong>Join tonight's waitlist.</strong>
+                  <span>We'll text if a 6:30-8:00 table opens.</span>
+                </div>
+                <button>Join waitlist</button>
+              </div>
+            </div>
+            <h3>Fully booked to waitlist</h3>
+            <div class="recovery-meta">
+              <span>Trigger: no inventory</span>
+              <span>Preserve: demand signal</span>
+            </div>
+            <p><strong>Feedback:</strong> "Join tonight's waitlist."</p>
+            <p><strong>Recovery:</strong> Convert demand into a waitlist with time range, party size, and SMS updates.</p>
+            <p><strong>System detail:</strong> Capture acceptable time range, calculate queue position, and notify only on actionable openings.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

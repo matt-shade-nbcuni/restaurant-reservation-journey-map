@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-reservation-journey-map",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A polished mobile web journey map for a premium restaurant reservation experience.",
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "check": "PYTHONPYCACHEPREFIX=.pycache python3 -m py_compile scripts/check_static.py && python3 scripts/check_static.py"
+  },
+  "keywords": [
+    "journey-map",
+    "restaurant",
+    "reservation",
+    "mobile",
+    "design"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
