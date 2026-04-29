@@ -1062,7 +1062,8 @@ dd {
   }
 
   .hero__metrics,
-  .recovery-grid {
+  .recovery-grid,
+  .tech-grid {
     grid-template-columns: 1fr;
   }
 
