@@ -8,6 +8,7 @@ required_files = [
     ROOT / "styles.css",
     ROOT / "README.md",
     ROOT / "package.json",
+    ROOT / "favicon.svg",
 ]
 
 required_content = [
@@ -22,6 +23,7 @@ required_content = [
     "Payment hold failure",
     "Network timeout",
     "Fully booked to waitlist",
+    "favicon.svg",
 ]
 
 
